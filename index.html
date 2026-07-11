@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sania Thabassum — Java Developer & AI Enthusiast</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Sania Thabassum — Aspiring Software Engineer & AI enthusiast skilled in Java, Python, SQL, and AI/ML. Explore projects like ByteShield, Coach AI, VeriCode, and IntelliLearn."/>
+  <meta name="keywords" content="Sania Thabassum, Java Developer, AI Developer, Software Engineer Portfolio, Machine Learning, Python Developer"/>
+  <meta name="author" content="Sania Thabassum"/>
+  <meta name="robots" content="index, follow"/>
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Sania Thabassum — Java Developer & AI Enthusiast"/>
+  <meta property="og:description" content="Aspiring Software Engineer & AI enthusiast skilled in Java, Python, SQL, and AI/ML. Explore my projects, skills, and journey."/>
+  <meta property="og:image" content="og-preview.svg"/>
+  <meta property="og:url" content="https://saniathabassum.dev/"/>
+  <meta property="og:site_name" content="Sania Thabassum Portfolio"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Sania Thabassum — Java Developer & AI Enthusiast"/>
+  <meta name="twitter:description" content="Aspiring Software Engineer & AI enthusiast skilled in Java, Python, SQL, and AI/ML."/>
+  <meta name="twitter:image" content="og-preview.svg"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap" rel="stylesheet"/>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Google Analytics (replace G-XXXXXXXXXX with your Measurement ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+
+  <!-- INTRO SPLASH -->
+  <div class="intro-splash" id="introSplash">
+    <div class="intro-badge">
+      <span class="badge-icon">✦</span>
+      <span id="typewriterText" class="typewriter-text"></span><span class="typewriter-cursor">|</span>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-monogram">
+          <svg width="44" height="36" viewBox="0 0 44 36" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#c084fc"/>
+                <stop offset="100%" style="stop-color:#7c3aed"/>
+              </linearGradient>
+              <filter id="glow">
+                <feGaussianBlur stdDeviation="1.8" result="blur"/>
+                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <text x="0" y="28" font-family="Poppins,sans-serif" font-weight="900" font-size="30" fill="url(#logoGrad)" filter="url(#glow)">S</text>
+            <text x="20" y="28" font-family="Poppins,sans-serif" font-weight="900" font-size="30" fill="white">T</text>
+            <line x1="0" y1="33" x2="18" y2="33" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="20" y1="33" x2="38" y2="33" stroke="rgba(255,255,255,0.25)" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="41" cy="27" r="3" fill="#9B5CFF"/>
+          </svg>
+        </span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn-hire">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+      <div class="shape shape-5"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-icon">✦</span>
+        <span>HI, I'M SANIA THABASSUM</span>
+      </div>
+      <h1 class="hero-title">
+        Building Logic with <span class="highlight">Java</span>,<br/>
+        Crafting Ideas with <span class="highlight-ai">AI.</span>
+      </h1>
+      <p class="hero-desc">
+        A passionate software developer skilled in Java, Python, SQL, Linux, and AI/ML fundamentals. I enjoy solving real-world problems through clean code, building practical applications, and continuously learning modern technologies.
+      </p>
+      <div class="hero-btns">
+        <a href="#portfolio" class="btn-primary">My Projects <span>→</span></a>
+        <a href="#resume" class="btn-secondary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-label fade-in">ABOUT ME</div>
+      <h2 class="section-title fade-in">Sania Thabassum</h2>
+
+      <div class="about-layout fade-in">
+        <div class="about-text-col">
+          <p class="about-tagline">" Builder by curiosity, learner by passion. "</p>
+          <div class="about-bio">
+            <p>I am an aspiring Software Engineer and AI enthusiast who enjoys transforming ideas into meaningful and practical solutions. My journey in technology is driven by a strong curiosity to understand how software works, how intelligent systems make decisions, and how innovative products can create real impact in people's lives.</p>
+            <p>I enjoy building applications that challenge me to think critically, solve problems creatively, and continuously improve my technical skills. Every project is an opportunity to learn something new — whether it is designing better user experiences, developing efficient solutions, or exploring the possibilities of artificial intelligence and emerging technologies.</p>
+            <p>My goal is not only to write code but to create technology that solves problems, delivers value, and leaves a meaningful impact.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats-row fade-in">
+        <div class="stat-card">
+          <div class="stat-num">4<span>+</span></div>
+          <div class="stat-label">Projects Built</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">16<span>+</span></div>
+          <div class="stat-label">Technical Skills</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">2027</div>
+          <div class="stat-label">Graduating</div>
+        </div>
+      </div>
+
+      <!-- Categorized Skills -->
+      
+  <!-- Skills & Expertise -->
+<div class="skills-area fade-in">
+
+    <div class="section-label">WHAT I KNOW</div>
+    <h3 class="skills-main-title">Skills & Expertise</h3>
+
+    <div class="skills-wrapper">
+
+    <div class="skills-box">
+        <h4>💻 Programming Languages</h4>
+        <div class="skill-tags">
+            <span>Java</span><span>Python</span><span>SQL</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>TypeScript</span>
+        </div>
+    </div>
+
+    <div class="skills-box">
+        <h4>⚙ Technologies & Tools</h4>
+        <div class="skill-tags">
+            <span>React</span><span>Git</span><span>GitHub</span><span>VS Code</span><span>Linux</span><span>MySQL</span><span> Rest APIs</span><span>Shell Scripting</span>
+        </div>
+    </div>
+
+    <div class="skills-box">
+        <h4>🧠 Computer Science Fundamentals</h4>
+        <div class="skill-tags">
+            <span>DSA</span><span>OOP</span><span>DBMS</span><span>Operating Systems</span><span>Computer Networks</span><span>Software Engineering</span>
+        </div>
+    </div>
+
+    <div class="skills-box">
+        <h4>🤖 AI & Machine Learning</h4>
+        <div class="skill-tags">
+            <span>Generative AI</span><span>Prompt Engineering</span><span>LLMs</span><span>RAG</span><span>TensorFlow</span><span>Scikit-Learn</span><span>Pandas</span><span>NumPy</span>
+        </div>
+    </div>
+
+</div></div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="section portfolio-section">
+    <div class="container">
+      <div class="section-label fade-in">VISIT MY PORTFOLIO</div>
+      <h2 class="section-title fade-in">My Amazing Work</h2>
+      <div class="portfolio-grid">
+
+        <!-- Project 1: VeriCode -->
+        <div class="project-card fade-in">
+          <div class="project-img">
+            <svg class="proj-svg" viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="pg1" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#0f0528"/><stop offset="100%" style="stop-color:#1e0d4a"/>
+                </linearGradient>
+                <linearGradient id="bar1" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color:#9B5CFF"/><stop offset="100%" style="stop-color:#c084fc"/>
+                </linearGradient>
+              </defs>
+              <rect width="420" height="220" fill="url(#pg1)"/>
+              <line x1="0" y1="44" x2="420" y2="44" stroke="rgba(155,92,255,0.07)" stroke-width="1"/>
+              <line x1="0" y1="88" x2="420" y2="88" stroke="rgba(155,92,255,0.07)" stroke-width="1"/>
+              <line x1="0" y1="132" x2="420" y2="132" stroke="rgba(155,92,255,0.07)" stroke-width="1"/>
+              <line x1="0" y1="176" x2="420" y2="176" stroke="rgba(155,92,255,0.07)" stroke-width="1"/>
+              <rect x="120" y="8" width="180" height="20" rx="6" fill="rgba(155,92,255,0.2)" stroke="rgba(155,92,255,0.4)" stroke-width="1"/>
+              <text x="160" y="22" font-family="monospace" font-size="9" fill="#c084fc" font-weight="bold">ByteShield</text>
+              <rect x="18" y="34" width="168" height="128" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(155,92,255,0.3)" stroke-width="1"/>
+              <rect x="234" y="34" width="168" height="128" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(155,92,255,0.3)" stroke-width="1"/>
+              <rect x="18" y="34" width="168" height="22" rx="8" fill="rgba(155,92,255,0.18)"/>
+              <circle cx="32" cy="45" r="3.5" fill="#ff6b6b" opacity="0.8"/><circle cx="44" cy="45" r="3.5" fill="#ffd93d" opacity="0.8"/><circle cx="56" cy="45" r="3.5" fill="#6bcb77" opacity="0.8"/>
+              <text x="70" y="49" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.5)">File_A.java</text>
+              <rect x="234" y="34" width="168" height="22" rx="8" fill="rgba(155,92,255,0.18)"/>
+              <circle cx="248" cy="45" r="3.5" fill="#ff6b6b" opacity="0.8"/><circle cx="260" cy="45" r="3.5" fill="#ffd93d" opacity="0.8"/><circle cx="272" cy="45" r="3.5" fill="#6bcb77" opacity="0.8"/>
+              <text x="286" y="49" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.5)">File_B.java</text>
+              <rect x="30" y="64" width="88" height="4" rx="2" fill="#9B5CFF" opacity="0.75"/>
+              <rect x="30" y="73" width="118" height="4" rx="2" fill="rgba(255,255,255,0.18)"/>
+              <rect x="30" y="82" width="68" height="4" rx="2" fill="#c084fc" opacity="0.6"/>
+              <rect x="30" y="91" width="108" height="4" rx="2" fill="rgba(255,255,255,0.12)"/>
+              <rect x="30" y="100" width="82" height="4" rx="2" fill="#9B5CFF" opacity="0.5"/>
+              <rect x="30" y="109" width="128" height="4" rx="2" fill="rgba(255,255,255,0.18)"/>
+              <rect x="30" y="118" width="58" height="4" rx="2" fill="#c084fc" opacity="0.4"/>
+              <rect x="30" y="127" width="98" height="4" rx="2" fill="rgba(255,255,255,0.1)"/>
+              <rect x="30" y="136" width="74" height="4" rx="2" fill="#9B5CFF" opacity="0.3"/>
+              <rect x="246" y="64" width="88" height="4" rx="2" fill="#9B5CFF" opacity="0.75"/>
+              <rect x="246" y="73" width="118" height="4" rx="2" fill="rgba(255,255,255,0.18)"/>
+              <rect x="246" y="82" width="68" height="4" rx="2" fill="#c084fc" opacity="0.6"/>
+              <rect x="246" y="91" width="108" height="4" rx="2" fill="rgba(255,255,255,0.12)"/>
+              <rect x="246" y="100" width="82" height="4" rx="2" fill="#9B5CFF" opacity="0.5"/>
+              <rect x="246" y="109" width="128" height="4" rx="2" fill="rgba(255,255,255,0.18)"/>
+              <rect x="246" y="118" width="58" height="4" rx="2" fill="#c084fc" opacity="0.4"/>
+              <rect x="246" y="127" width="98" height="4" rx="2" fill="rgba(255,255,255,0.1)"/>
+              <rect x="246" y="136" width="74" height="4" rx="2" fill="#9B5CFF" opacity="0.3"/>
+              <line x1="190" y1="88" x2="230" y2="88" stroke="url(#bar1)" stroke-width="1.5" stroke-dasharray="4 2"/>
+              <polygon points="228,84 236,88 228,92" fill="#9B5CFF"/>
+              <line x1="190" y1="100" x2="230" y2="100" stroke="rgba(155,92,255,0.3)" stroke-width="1" stroke-dasharray="3 2"/>
+              <line x1="190" y1="112" x2="230" y2="112" stroke="rgba(155,92,255,0.3)" stroke-width="1" stroke-dasharray="3 2"/>
+              <rect x="60" y="172" width="300" height="22" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(155,92,255,0.2)" stroke-width="1"/>
+              <text x="72" y="187" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.35)">Similarity Score</text>
+              <rect x="190" y="176" width="120" height="14" rx="4" fill="rgba(155,92,255,0.12)"/>
+              <rect x="190" y="176" width="96" height="14" rx="4" fill="url(#bar1)" opacity="0.75"/>
+              <text x="292" y="187" font-family="monospace" font-size="8" fill="white" font-weight="bold">80%</text>
+            </svg>
+          </div>
+          <div class="project-info">
+            <h3>ByteShield</h3>
+            <p class="proj-subtitle">Automated Code Integrity &amp; Plagiarism Detection Platform</p>
+            <p>Compares source code files using tokenization and ML-powered similarity algorithms to detect plagiarism and generate detailed integrity reports.</p>
+            <div class="proj-actions">
+              <button class="btn-view" onclick="openModal('modal1')">View Tech Stack ↗</button>
+              <a href="https://github.com/codewithmesaniaa/ByteShield.git" target="_blank" rel="noopener" class="proj-link-item proj-link-solo">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                View Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Coach AI -->
+        <div class="project-card fade-in">
+          <div class="project-img">
+            <svg class="proj-svg" viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="pg2" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#050f28"/><stop offset="100%" style="stop-color:#0a1f4a"/>
+                </linearGradient>
+                <linearGradient id="wave" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color:#38bdf8"/><stop offset="100%" style="stop-color:#818cf8"/>
+                </linearGradient>
+                <linearGradient id="gemini" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#4f8ef7"/><stop offset="100%" style="stop-color:#a855f7"/>
+                </linearGradient>
+              </defs>
+              <rect width="420" height="220" fill="url(#pg2)"/>
+              <rect x="140" y="8" width="140" height="20" rx="6" fill="rgba(56,189,248,0.15)" stroke="rgba(56,189,248,0.35)" stroke-width="1"/>
+              <text x="165" y="22" font-family="monospace" font-size="9" fill="#38bdf8" font-weight="bold">Coach AI</text>
+              <rect x="16" y="34" width="110" height="140" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(56,189,248,0.25)" stroke-width="1"/>
+              <rect x="16" y="34" width="110" height="18" rx="8" fill="rgba(56,189,248,0.15)"/>
+              <text x="32" y="47" font-family="monospace" font-size="7.5" fill="#38bdf8">resume.pdf</text>
+              <rect x="26" y="62" width="70" height="4" rx="2" fill="rgba(255,255,255,0.3)"/>
+              <rect x="26" y="71" width="88" height="3" rx="2" fill="rgba(255,255,255,0.15)"/>
+              <rect x="26" y="79" width="60" height="3" rx="2" fill="rgba(255,255,255,0.15)"/>
+              <rect x="26" y="90" width="80" height="3" rx="2" fill="#38bdf8" opacity="0.4"/>
+              <rect x="26" y="98" width="55" height="3" rx="2" fill="#38bdf8" opacity="0.3"/>
+              <rect x="26" y="107" width="78" height="3" rx="2" fill="rgba(255,255,255,0.12)"/>
+              <rect x="26" y="116" width="65" height="3" rx="2" fill="rgba(255,255,255,0.12)"/>
+              <rect x="26" y="128" width="72" height="3" rx="2" fill="#818cf8" opacity="0.4"/>
+              <rect x="26" y="137" width="48" height="3" rx="2" fill="#818cf8" opacity="0.3"/>
+              <rect x="26" y="146" width="82" height="3" rx="2" fill="rgba(255,255,255,0.1)"/>
+              <circle cx="210" cy="100" r="38" fill="rgba(56,189,248,0.05)" stroke="rgba(56,189,248,0.2)" stroke-width="1.5"/>
+              <circle cx="210" cy="100" r="24" fill="rgba(56,189,248,0.08)" stroke="url(#gemini)" stroke-width="1.5"/>
+              <circle cx="210" cy="100" r="12" fill="rgba(79,142,247,0.2)" stroke="#4f8ef7" stroke-width="1.5"/>
+              <line x1="130" y1="75" x2="172" y2="90" stroke="rgba(56,189,248,0.35)" stroke-width="1"/>
+              <line x1="130" y1="100" x2="172" y2="100" stroke="rgba(56,189,248,0.35)" stroke-width="1"/>
+              <line x1="130" y1="125" x2="172" y2="110" stroke="rgba(56,189,248,0.35)" stroke-width="1"/>
+              <line x1="248" y1="75" x2="290" y2="60" stroke="rgba(168,85,247,0.35)" stroke-width="1"/>
+              <line x1="248" y1="95" x2="290" y2="100" stroke="rgba(168,85,247,0.35)" stroke-width="1"/>
+              <line x1="248" y1="115" x2="290" y2="140" stroke="rgba(168,85,247,0.35)" stroke-width="1"/>
+              <text x="203" y="106" font-size="13" fill="url(#gemini)">✦</text>
+              <rect x="294" y="46" width="108" height="26" rx="8" fill="rgba(168,85,247,0.12)" stroke="rgba(168,85,247,0.3)" stroke-width="1"/>
+              <text x="302" y="57" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.5)">Tell me about your</text>
+              <text x="302" y="67" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.5)">Java experience...</text>
+              <rect x="294" y="82" width="108" height="26" rx="8" fill="rgba(56,189,248,0.1)" stroke="rgba(56,189,248,0.25)" stroke-width="1"/>
+              <text x="302" y="93" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.5)">I worked on OOP</text>
+              <text x="302" y="103" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.5)">design patterns...</text>
+              <rect x="294" y="120" width="108" height="26" rx="8" fill="rgba(168,85,247,0.12)" stroke="rgba(168,85,247,0.3)" stroke-width="1"/>
+              <text x="302" y="131" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.5)">Great! Next: System</text>
+              <text x="302" y="141" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.5)">Design question...</text>
+              <rect x="100" y="182" width="6" height="18" rx="3" fill="url(#wave)" opacity="0.5"/>
+              <rect x="112" y="176" width="6" height="30" rx="3" fill="url(#wave)" opacity="0.7"/>
+              <rect x="124" y="179" width="6" height="24" rx="3" fill="url(#wave)" opacity="0.6"/>
+              <rect x="136" y="173" width="6" height="36" rx="3" fill="url(#wave)" opacity="0.85"/>
+              <rect x="148" y="178" width="6" height="26" rx="3" fill="url(#wave)" opacity="0.7"/>
+              <rect x="160" y="184" width="6" height="14" rx="3" fill="url(#wave)" opacity="0.5"/>
+              <rect x="172" y="175" width="6" height="32" rx="3" fill="url(#wave)" opacity="0.75"/>
+              <rect x="184" y="180" width="6" height="22" rx="3" fill="url(#wave)" opacity="0.6"/>
+              <rect x="196" y="177" width="6" height="28" rx="3" fill="url(#wave)" opacity="0.65"/>
+              <rect x="208" y="183" width="6" height="16" rx="3" fill="url(#wave)" opacity="0.5"/>
+              <rect x="220" y="174" width="6" height="34" rx="3" fill="url(#wave)" opacity="0.8"/>
+              <rect x="232" y="179" width="6" height="24" rx="3" fill="url(#wave)" opacity="0.6"/>
+            </svg>
+          </div>
+          <div class="project-info">
+            <h3>Coach AI</h3>
+            <p class="proj-subtitle">AI-Powered Resume-Aware Interview Coach</p>
+            <p>Conducts personalized mock interviews using resume context, speech-to-text/text-to-speech via Web Speech API, and Google Gemini LLMs for dynamic question generation.</p>
+            <div class="proj-actions">
+              <button class="btn-view" onclick="openModal('modal2')">View Tech Stack ↗</button>
+              <a href="https://github.com/codewithmesaniaa/CoachAI.git" target="_blank" rel="noopener" class="proj-link-item proj-link-solo">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                View Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: CodeSense -->
+        <div class="project-card fade-in">
+          <div class="project-img">
+            <svg class="proj-svg" viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="pg3" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#0a0a1a"/><stop offset="100%" style="stop-color:#0f1535"/>
+                </linearGradient>
+                <linearGradient id="orange" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color:#f97316"/><stop offset="100%" style="stop-color:#fb923c"/>
+                </linearGradient>
+                <linearGradient id="greengrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color:#22c55e"/><stop offset="100%" style="stop-color:#4ade80"/>
+                </linearGradient>
+              </defs>
+              <rect width="420" height="220" fill="url(#pg3)"/>
+              <rect x="16" y="10" width="200" height="158" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(99,102,241,0.3)" stroke-width="1"/>
+              <rect x="16" y="10" width="200" height="20" rx="8" fill="rgba(99,102,241,0.2)"/>
+              <circle cx="28" cy="20" r="3" fill="#ff6b6b" opacity="0.8"/>
+              <circle cx="39" cy="20" r="3" fill="#ffd93d" opacity="0.8"/>
+              <circle cx="50" cy="20" r="3" fill="#6bcb77" opacity="0.8"/>
+              <text x="90" y="24" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.45)">main.js — VeriCode</text>
+              <rect x="16" y="30" width="22" height="138" fill="rgba(255,255,255,0.02)"/>
+              <text x="20" y="44" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.2)">1</text>
+              <text x="20" y="55" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.2)">2</text>
+              <text x="20" y="66" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.2)">3</text>
+              <text x="20" y="77" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.2)">4</text>
+              <text x="20" y="88" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.2)">5</text>
+              <text x="20" y="99" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.2)">6</text>
+              <text x="20" y="110" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.2)">7</text>
+              <text x="20" y="121" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.2)">8</text>
+              <text x="20" y="132" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.2)">9</text>
+              <rect x="44" y="39" width="50" height="4" rx="1" fill="#818cf8" opacity="0.8"/>
+              <rect x="98" y="39" width="60" height="4" rx="1" fill="#38bdf8" opacity="0.6"/>
+              <rect x="44" y="50" width="30" height="4" rx="1" fill="#f472b6" opacity="0.7"/>
+              <rect x="78" y="50" width="80" height="4" rx="1" fill="rgba(255,255,255,0.3)"/>
+              <rect x="44" y="61" width="100" height="4" rx="1" fill="rgba(255,255,255,0.2)"/>
+              <rect x="44" y="72" width="40" height="4" rx="1" fill="#4ade80" opacity="0.7"/>
+              <rect x="88" y="72" width="70" height="4" rx="1" fill="rgba(255,255,255,0.2)"/>
+              <rect x="38" y="83" width="172" height="13" rx="2" fill="rgba(248,113,113,0.12)" stroke="rgba(248,113,113,0.3)" stroke-width="1"/>
+              <rect x="44" y="86" width="90" height="4" rx="1" fill="#f87171" opacity="0.8"/>
+              <text x="138" y="94" font-family="monospace" font-size="7" fill="#f87171">← bug</text>
+              <rect x="44" y="101" width="60" height="4" rx="1" fill="#818cf8" opacity="0.6"/>
+              <rect x="44" y="112" width="110" height="4" rx="1" fill="rgba(255,255,255,0.15)"/>
+              <rect x="44" y="123" width="70" height="4" rx="1" fill="#38bdf8" opacity="0.5"/>
+              <rect x="44" y="134" width="95" height="4" rx="1" fill="rgba(255,255,255,0.12)"/>
+              <rect x="44" y="145" width="50" height="4" rx="1" fill="#4ade80" opacity="0.4"/>
+              <rect x="228" y="10" width="176" height="158" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(99,102,241,0.25)" stroke-width="1"/>
+              <rect x="228" y="10" width="176" height="20" rx="8" fill="rgba(99,102,241,0.18)"/>
+              <text x="248" y="24" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.45)">✦ AI Analysis</text>
+              <text x="238" y="46" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.4)">Complexity</text>
+              <rect x="238" y="50" width="130" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
+              <rect x="238" y="50" width="82" height="8" rx="4" fill="url(#orange)" opacity="0.75"/>
+              <text x="374" y="58" font-family="monospace" font-size="7" fill="#fb923c">63%</text>
+              <text x="238" y="74" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.4)">Code Quality</text>
+              <rect x="238" y="78" width="130" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
+              <rect x="238" y="78" width="104" height="8" rx="4" fill="url(#greengrad)" opacity="0.75"/>
+              <text x="374" y="86" font-family="monospace" font-size="7" fill="#4ade80">80%</text>
+              <text x="238" y="102" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.4)">Interview Score</text>
+              <rect x="238" y="106" width="130" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
+              <rect x="238" y="106" width="117" height="8" rx="4" fill="url(#wave)" opacity="0.7"/>
+              <text x="374" y="114" font-family="monospace" font-size="7" fill="#38bdf8">90%</text>
+              <rect x="238" y="124" width="155" height="3" rx="1" fill="rgba(255,255,255,0.12)"/>
+              <rect x="238" y="131" width="140" height="3" rx="1" fill="rgba(255,255,255,0.08)"/>
+              <rect x="238" y="138" width="120" height="3" rx="1" fill="rgba(255,255,255,0.08)"/>
+              <rect x="238" y="147" width="155" height="3" rx="1" fill="rgba(255,255,255,0.08)"/>
+              <rect x="238" y="154" width="100" height="3" rx="1" fill="rgba(99,102,241,0.4)"/>
+              <rect x="16" y="175" width="388" height="24" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(99,102,241,0.2)" stroke-width="1"/>
+              <circle cx="32" cy="187" r="4" fill="#f87171" opacity="0.7"/>
+              <text x="42" y="191" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.3)">1 bug detected</text>
+              <circle cx="150" cy="187" r="4" fill="#4ade80" opacity="0.7"/>
+              <text x="160" y="191" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.3)">Gemini 2.5 powered</text>
+              <circle cx="290" cy="187" r="4" fill="#38bdf8" opacity="0.7"/>
+              <text x="300" y="191" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.3)">Interview ready</text>
+            </svg>
+          </div>
+          <div class="project-info">
+            <h3>VeriCode</h3>
+            <p class="proj-subtitle">From Code Review to Interview Readiness</p>
+            <p>An intelligent code analysis platform that performs automated code reviews, complexity evaluation, bug detection, and interview-focused feedback using AI-powered insights.</p>
+            <div class="proj-actions">
+              <button class="btn-view" onclick="openModal('modal3')">View Tech Stack ↗</button>
+              <a href="https://github.com/codewithmesaniaa/VeriCode.git" target="_blank" rel="noopener" class="proj-link-item proj-link-solo">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                View Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: IntelliLearn -->
+        <div class="project-card fade-in">
+          <div class="project-img">
+            <svg class="proj-svg" viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="pg4" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#160a2e"/><stop offset="100%" style="stop-color:#2a0f4d"/>
+                </linearGradient>
+                <linearGradient id="il-bar" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color:#a855f7"/><stop offset="100%" style="stop-color:#ec4899"/>
+                </linearGradient>
+                <linearGradient id="il-gemini" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#818cf8"/><stop offset="100%" style="stop-color:#c084fc"/>
+                </linearGradient>
+              </defs>
+              <rect width="420" height="220" fill="url(#pg4)"/>
+              <!-- Title badge -->
+              <rect x="135" y="8" width="150" height="20" rx="6" fill="rgba(168,85,247,0.2)" stroke="rgba(168,85,247,0.4)" stroke-width="1"/>
+              <text x="155" y="22" font-family="monospace" font-size="9" fill="#d8b4fe" font-weight="bold">IntelliLearn</text>
+
+              <!-- Left panel: Study plan / calendar -->
+              <rect x="16" y="34" width="150" height="160" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(168,85,247,0.25)" stroke-width="1"/>
+              <rect x="16" y="34" width="150" height="18" rx="8" fill="rgba(168,85,247,0.15)"/>
+              <text x="26" y="47" font-family="monospace" font-size="7.5" fill="#d8b4fe">Study Plan</text>
+              <!-- progress rows -->
+              <rect x="26" y="60" width="16" height="16" rx="3" fill="rgba(34,197,94,0.3)" stroke="#4ade80" stroke-width="1"/>
+              <text x="30" y="71" font-size="9" fill="#4ade80">✓</text>
+              <rect x="48" y="64" width="100" height="4" rx="2" fill="rgba(255,255,255,0.25)"/>
+              <rect x="26" y="84" width="16" height="16" rx="3" fill="rgba(34,197,94,0.3)" stroke="#4ade80" stroke-width="1"/>
+              <text x="30" y="95" font-size="9" fill="#4ade80">✓</text>
+              <rect x="48" y="88" width="84" height="4" rx="2" fill="rgba(255,255,255,0.25)"/>
+              <rect x="26" y="108" width="16" height="16" rx="3" fill="rgba(168,85,247,0.25)" stroke="#a855f7" stroke-width="1.5"/>
+              <rect x="48" y="112" width="92" height="4" rx="2" fill="#c084fc" opacity="0.7"/>
+              <rect x="26" y="132" width="16" height="16" rx="3" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+              <rect x="48" y="136" width="78" height="4" rx="2" fill="rgba(255,255,255,0.12)"/>
+              <rect x="26" y="156" width="16" height="16" rx="3" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+              <rect x="48" y="160" width="68" height="4" rx="2" fill="rgba(255,255,255,0.12)"/>
+              <!-- Adaptive label -->
+              <rect x="26" y="178" width="128" height="12" rx="4" fill="rgba(168,85,247,0.12)"/>
+              <text x="32" y="187" font-family="monospace" font-size="7" fill="#d8b4fe">Adaptive scheduling</text>
+
+              <!-- Center: Gemini RAG brain -->
+              <circle cx="245" cy="80" r="34" fill="rgba(168,85,247,0.06)" stroke="rgba(168,85,247,0.25)" stroke-width="1.5"/>
+              <circle cx="245" cy="80" r="22" fill="rgba(168,85,247,0.1)" stroke="url(#il-gemini)" stroke-width="1.5"/>
+              <circle cx="245" cy="80" r="10" fill="rgba(168,85,247,0.2)" stroke="#a855f7" stroke-width="1.5"/>
+              <text x="239" y="85" font-size="11" fill="url(#il-gemini)">✦</text>
+              <line x1="186" y1="65" x2="223" y2="75" stroke="rgba(168,85,247,0.3)" stroke-width="1"/>
+              <line x1="186" y1="95" x2="223" y2="88" stroke="rgba(168,85,247,0.3)" stroke-width="1"/>
+              <line x1="304" y1="65" x2="267" y2="75" stroke="rgba(168,85,247,0.3)" stroke-width="1"/>
+              <line x1="304" y1="95" x2="267" y2="88" stroke="rgba(168,85,247,0.3)" stroke-width="1"/>
+              <text x="208" y="125" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.35)">RAG query</text>
+
+              <!-- Right panel: Performance analytics -->
+              <rect x="290" y="34" width="114" height="100" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(236,72,153,0.25)" stroke-width="1"/>
+              <rect x="290" y="34" width="114" height="18" rx="8" fill="rgba(236,72,153,0.15)"/>
+              <text x="300" y="47" font-family="monospace" font-size="7.5" fill="#f9a8d4">Analytics</text>
+              <!-- bar chart -->
+              <rect x="302" y="92" width="10" height="30" rx="2" fill="url(#il-bar)" opacity="0.6"/>
+              <rect x="318" y="78" width="10" height="44" rx="2" fill="url(#il-bar)" opacity="0.75"/>
+              <rect x="334" y="64" width="10" height="58" rx="2" fill="url(#il-bar)" opacity="0.9"/>
+              <rect x="350" y="84" width="10" height="38" rx="2" fill="url(#il-bar)" opacity="0.7"/>
+              <rect x="366" y="70" width="10" height="52" rx="2" fill="url(#il-bar)" opacity="0.85"/>
+              <rect x="382" y="58" width="10" height="64" rx="2" fill="url(#il-bar)" opacity="1"/>
+              <line x1="298" y1="124" x2="400" y2="124" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+
+              <!-- Mastery score card -->
+              <rect x="290" y="144" width="114" height="50" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(168,85,247,0.2)" stroke-width="1"/>
+              <text x="300" y="160" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.4)">Mastery Score</text>
+              <rect x="300" y="166" width="94" height="10" rx="5" fill="rgba(255,255,255,0.06)"/>
+              <rect x="300" y="166" width="76" height="10" rx="5" fill="url(#il-gemini)" opacity="0.8"/>
+              <text x="300" y="188" font-family="monospace" font-size="9" fill="white" font-weight="bold">81%</text>
+            </svg>
+          </div>
+          <div class="project-info">
+            <h3>IntelliLearn</h3>
+            <p class="proj-subtitle">AI-Powered Personalized Learning Ecosystem</p>
+            <p>An adaptive study planning and performance analytics platform that uses context-aware RAG querying to generate dynamic learning material tailored to each learner.</p>
+            <div class="proj-actions">
+              <button class="btn-view" onclick="openModal('modal4')">View Tech Stack ↗</button>
+              <a href="https://github.com/codewithmesaniaa/IntelliLearn.git" target="_blank" rel="noopener" class="proj-link-item proj-link-solo">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                View Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK MODALS -->
+  <div class="modal-overlay" id="modal1" onclick="closeModal('modal1')">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal1')">✕</button>
+      <div class="modal-header">
+        <div class="modal-badge">Project 01</div>
+        <h3>ByteShield</h3>
+        <p>Automated Code Integrity &amp; Plagiarism Detection Platform</p>
+      </div>
+      <div class="stack-groups">
+        <div class="stack-group">
+          <div class="stack-group-label">Frontend</div>
+          <div class="stack-pills"><span class="spill spill-purple">HTML</span><span class="spill spill-purple">CSS</span><span class="spill spill-purple">JavaScript</span></div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-label">Backend</div>
+          <div class="stack-pills"><span class="spill spill-blue">Python</span><span class="spill spill-blue">Flask</span></div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-label">Libraries</div>
+          <div class="stack-pills"><span class="spill spill-green">scikit-learn</span><span class="spill spill-green">javalang</span><span class="spill spill-green">difflib</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal2" onclick="closeModal('modal2')">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal2')">✕</button>
+      <div class="modal-header">
+        <div class="modal-badge">Project 02</div>
+        <h3>Coach AI</h3>
+        <p>AI-Powered Resume-Aware Interview Coach</p>
+      </div>
+      <div class="stack-groups">
+        <div class="stack-group">
+          <div class="stack-group-label">Frontend</div>
+          <div class="stack-pills"><span class="spill spill-blue">React 19</span><span class="spill spill-blue">TypeScript 5.8</span><span class="spill spill-blue">Tailwind CSS v4</span></div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-label">Forms &amp; Build</div>
+          <div class="stack-pills"><span class="spill spill-purple">React Hook Form</span><span class="spill spill-purple">Vite 7</span><span class="spill spill-purple">ESLint 9</span></div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-label">Backend &amp; Auth</div>
+          <div class="stack-pills"><span class="spill spill-green">Supabase</span></div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-label">AI / LLM</div>
+          <div class="stack-pills"><span class="spill spill-orange">Gemini 3.5 Flash</span><span class="spill spill-orange">Gemini 3 Flash Preview</span></div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-label">Browser APIs</div>
+          <div class="stack-pills"><span class="spill spill-pink">Web Speech API</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal3" onclick="closeModal('modal3')">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal3')">✕</button>
+      <div class="modal-header">
+        <div class="modal-badge">Project 03</div>
+        <h3>VeriCode</h3>
+        <p>From Code Review to Interview Readiness</p>
+      </div>
+      <div class="stack-groups">
+        <div class="stack-group">
+          <div class="stack-group-label">Core Languages</div>
+          <div class="stack-pills"><span class="spill spill-orange">JavaScript</span><span class="spill spill-orange">HTML5</span><span class="spill spill-orange">CSS3</span></div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-label">Frontend</div>
+          <div class="stack-pills"><span class="spill spill-blue">React 18</span><span class="spill spill-blue">Tailwind CSS v4</span><span class="spill spill-blue">Monaco Editor</span><span class="spill spill-blue">Motion</span></div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-label">Backend</div>
+          <div class="stack-pills"><span class="spill spill-green">Node.js</span><span class="spill spill-green">Express</span></div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-label">AI / API</div>
+          <div class="stack-pills"><span class="spill spill-purple">Gemini 2.5</span><span class="spill spill-purple">Gemini 3.1 Flash-Lite</span></div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-label">Build Tools</div>
+          <div class="stack-pills"><span class="spill spill-pink">Vite</span><span class="spill spill-pink">npm</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal4" onclick="closeModal('modal4')">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal4')">✕</button>
+      <div class="modal-header">
+        <div class="modal-badge">Project 04</div>
+        <h3>IntelliLearn</h3>
+        <p>AI-Powered Personalized Learning Ecosystem</p>
+      </div>
+      <div class="stack-groups">
+        <div class="stack-group">
+          <div class="stack-group-label">Frontend Core</div>
+          <div class="stack-pills"><span class="spill spill-blue">React 18+</span><span class="spill spill-blue">TypeScript</span></div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-label">State &amp; Storage</div>
+          <div class="stack-pills"><span class="spill spill-purple">Sandboxed Session Storage</span></div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-label">Build &amp; Tooling</div>
+          <div class="stack-pills"><span class="spill spill-pink">Vite</span></div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-label">Styling</div>
+          <div class="stack-pills"><span class="spill spill-green">Tailwind CSS</span></div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-label">Interactions</div>
+          <div class="stack-pills"><span class="spill spill-orange">Motion (motion/react)</span></div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-label">System Service</div>
+          <div class="stack-pills"><span class="spill spill-purple">Google Gemini (Server-side RAG)</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESUME -->
+  <section id="resume" class="section resume-section">
+    <div class="container">
+      <div class="section-label fade-in">MY JOURNEY SO FAR</div>
+      <h2 class="section-title fade-in">My CV Resume</h2>
+      <div class="resume-download fade-in">
+        <a href="assests/resume/Sania_Thabassum_Resume.pdf" class="btn-download">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Resume
+        </a>
+      </div>
+      <div class="resume-grid">
+        <div class="resume-col fade-in">
+          <h3 class="resume-col-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            Education
+          </h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2023 – 2027</div>
+              <div class="timeline-card">
+                <h4>B.Tech Computer Science Engineering</h4>
+                <p>Malla Reddy College of Engineering & Technology</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2021 – 2023</div>
+              <div class="timeline-card">
+                <h4>Higher Secondary (PCM)</h4>
+                <p>Science stream with Mathematics focus</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="resume-col fade-in">
+          <h3 class="resume-col-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M8 8H4l-2 8h4l2 4 4-12 4 12 2-4h4l-2-8h-4"/></svg>
+            Certifications
+          </h3>
+          <div class="about-cards">
+            <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=746359815718C6B17083C7D7944411AC1ED114D494EBE36D9BFE9960C988E1DC" target="_blank" rel="noopener" class="about-card-item cert-item cert-link">
+              <div class="cert-icon">☁️</div>
+              <div>
+                <div class="about-card-label">Oracle</div>
+                <div class="about-card-value">OCI Generative AI Professional</div>
+              </div>
+              <svg class="cert-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </a>
+
+            <!-- Infosys Springboard Internship -->
+
+            <a href="C:\Users\sania\Downloads\img.jpeg.jpeg"
+              target="_blank"
+              rel="noopener"
+              class="about-card-item cert-item cert-link fade-in">
+
+                <div class="cert-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#38bdf8"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round">
+
+                        <path d="M22 10v6M2 10v6"/>
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M7 12v5c0 1.5 2.2 3 5 3s5-1.5 5-3v-5"/>
+
+                    </svg>
+                </div>
+
+                <div>
+                    <div class="about-card-label">
+                        Infosys Springboard
+                    </div>
+
+                    <div class="about-card-value">
+                        Internship 6.0 – Web Platform for Freelance Services & Skill Matching
+                    </div>
+                </div>
+
+                <svg class="cert-arrow"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2">
+                    <path d="M7 17L17 7M7 7h10v10"/>
+                </svg>
+
+            </a>
+             <!-- HackerRank Frontend Developer (React) -->
+               <a href="https://www.hackerrank.com/certificates/16542194380a" target="_blank" rel="noopener" class="about-card-item cert-item cert-link">
+              <div class="cert-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              </div>
+              <div>
+                <div class="about-card-label">HackerRank</div>
+                <div class="about-card-value">Frontend Developer (React)</div>
+              </div>
+              <svg class="cert-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </a>
+
+
+                  
+            <!-- Google Cloud Skills Boost - combined badges -->
+            <div class="about-card-item cert-item cert-group">
+              <div class="cert-icon">🎓</div>
+              <div class="cert-group-body">
+                <div class="about-card-label">Google Cloud Skills Boost</div>
+                <div class="about-card-value">4 Verified Badges</div>
+                <div class="cert-badge-links">
+                  <a href="https://www.skills.google/public_profiles/5aa7e734-2a4b-4bdd-8aba-c103deca3eb9/badges/25003890" target="_blank" rel="noopener" class="cert-badge-pill">Generative AI ↗</a>
+                  <a href="https://www.skills.google/public_profiles/5aa7e734-2a4b-4bdd-8aba-c103deca3eb9/badges/25004494" target="_blank" rel="noopener" class="cert-badge-pill">Intro to LLMs ↗</a>
+                  <a href="https://www.skills.google/public_profiles/5aa7e734-2a4b-4bdd-8aba-c103deca3eb9/badges/25004652" target="_blank" rel="noopener" class="cert-badge-pill">Responsible AI ↗</a>
+                  <a href="https://www.skills.google/public_profiles/5aa7e734-2a4b-4bdd-8aba-c103deca3eb9/badges/25004710" target="_blank" rel="noopener" class="cert-badge-pill">Image Generation ↗</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-label fade-in">GET IN TOUCH</div>
+      <h2 class="section-title fade-in">Contact Me</h2>
+      <div class="contact-wrapper fade-in">
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/mqevyler" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" required/>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" required/>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" placeholder="Subject" required/>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn-send">
+            <span class="btn-send-text">Send Message →</span>
+          </button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <span class="logo-monogram" style="transform:scale(0.85);transform-origin:left center;">
+          <svg width="44" height="36" viewBox="0 0 44 36" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="logoGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#c084fc"/>
+                <stop offset="100%" style="stop-color:#7c3aed"/>
+              </linearGradient>
+            </defs>
+            <text x="0" y="28" font-family="Poppins,sans-serif" font-weight="900" font-size="30" fill="url(#logoGrad2)">S</text>
+            <text x="20" y="28" font-family="Poppins,sans-serif" font-weight="900" font-size="30" fill="white">T</text>
+            <line x1="0" y1="33" x2="18" y2="33" stroke="url(#logoGrad2)" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="20" y1="33" x2="38" y2="33" stroke="rgba(255,255,255,0.25)" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="41" cy="27" r="3" fill="#9B5CFF"/>
+          </svg>
+        </span>
+      </div>
+      <p class="footer-copy">© 2026 Sania Thabassum. All Rights Reserved.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/codewithmesaniaa" target="_blank" rel="noopener" aria-label="GitHub" class="social-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/sania-14ab8a351" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:saniathabassum8@gmail.com" aria-label="Email" class="social-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
